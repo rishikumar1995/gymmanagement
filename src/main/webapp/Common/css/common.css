@@ -1,0 +1,208 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #fff;
+}
+.d-none {
+    display: none;
+}
+
+.text-center{
+text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 40px auto; /* Centering the container */
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    text-align: center;
+}
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="time"],
+input[type="date"],
+input[type="file"],
+input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    background-color: #fff;
+    color: #444;
+    border-radius: 5px;
+}
+.password-icon {
+    position: relative;
+}
+.password-icon i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #ccc;
+}
+.password-icon i:hover {
+    color: #fff;
+}
+.menu-icon {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 999;
+    background-color: transparent;
+    border: none;
+}
+.menu-icon span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    margin-bottom: 6px;
+    border-radius: 2px; /* Add border radius */
+    transition: transform 0.3s, opacity 0.3s, background-color 0.3s; /* Add transition effect */
+}
+.menu-icon:hover span {
+    background-color: #ccc; /* Change color on hover */
+}
+.menu-icon span:last-child {
+    margin-bottom: 0;
+}
+.slider {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 998;
+}
+.menu {
+    padding: 50px 20px;
+    width: 250px;
+}
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    color: #fff;
+}
+.signup-page {
+    background-color: #333;
+    padding: 50px;
+    border-radius: 10px;
+}
+.btn-container {
+    margin-top: 20px;
+}
+button {
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+button:hover {
+    background-color: #27ae60;
+}
+.login-link {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: block;
+}
+.login-link:hover {
+    color: #fff;
+}
+
+/* Hide up and down arrows on number input fields */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    display: none;
+}
+
+/* Media Query for Mobile View */
+@media only screen and (max-width: 600px) {
+    .container {
+        margin: 40px 10px; /* Adjust margin for mobile view */
+    }
+    .menu-icon span {
+        width: 25px;
+    }
+}
+
+.card {
+    width: 100%; /* Adjust as per your design */
+    margin-bottom: 10px; /* Adjust as per your design */
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    height: 175px;
+}
+.card .details {
+    padding: 10px;
+}
+.card .details h2 {
+    margin: 5px 0;
+    font-size: 18px;
+}
+.card .details p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+.card .details .join-btn {
+    width: 45%;
+    padding: 10px;
+    background-color: #2ecc71;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 7px;
+}
+
+.textAreaCss{
+    width: 99%;
+    background: #ffffff;
+    height: 40px;
+    color: #444;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.centered-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Set desired height */
+    border: 2px solid #ccc; /* Add border for visibility */
+    border-radius: 10px; /* Add border radius */
+    font-family: Arial, sans-serif; /* Choose desired font */
+    font-size: 18px; /* Choose desired font size */
+    color: #333; /* Choose desired text color */
+    background-color: #f0f0f0; /* Choose desired background color */
+    margin: 100px;
+}
